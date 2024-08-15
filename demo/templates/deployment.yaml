@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demoArgocd
+  name: demoargocd
   labels:
-    app: demoArgocd
+    app: demoargocd
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: demoArgocd
+      app: demoargocd
   template:
     metadata:
       labels:
-        app: demoArgocd
+        app: demoargocd
     spec:
       containers:
-        - name: demoArgocd
+        - name: demoargocd
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: 80

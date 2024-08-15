@@ -1,4 +1,4 @@
 apiVersion: v2
-name: demoArgocd
+name: demoargocd
 description: A Helm chart for a simple Argocd application
 version: 0.1.0
